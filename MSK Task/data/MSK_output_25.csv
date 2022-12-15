@@ -1,0 +1,26 @@
+Trial Number,Condition,Reaction Time,Accuracy,Stimulus Category,Participant Choice Category
+1,Feedback,1.0380134,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//partialViewinglowmatched_tree1.png,banana
+2,Feedback,0.5999574,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_building7.png,building
+3,Feedback,0.9481116,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_deletionlowmatched_building9.png,bus
+4,Feedback,0.5450587,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//bloblowmatched_bus7.png,bus
+5,Feedback,1.3989047,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_bird10.png,bird
+6,Feedback,1.1692985,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//partialViewinghighmatched_tree5.png,banana
+7,Feedback,0.8338796,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//lightcluttermatched_cat8.png,cat
+8,Feedback,0.8835951,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//partialViewinglowmatched_building4.png,building
+9,Feedback,0.8077135,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_tree1.png,tree
+10,Feedback,0.5193384,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_blobhighmatched_tree7.png,tree
+11,Feedback,0.6709036,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//partialViewinglowmatched_building2.png,person
+12,Feedback,1.6345752,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_banana10.png,banana
+13,Feedback,1.4552666,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//heavycluttermatched_bird9.png,bird
+14,Feedback,0.7360633,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//deletionhighmatched_bus10.png,bus
+15,Feedback,0.9104991,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_bloblowmatched_cat7.png,cat
+16,Feedback,0.5987137,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//bloblowmatched_bird8.png,bird
+17,Feedback,1.1637449,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_blobhighmatched_cat8.png,cat
+18,Feedback,1.384644,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_partialViewinghighmatched_firehydrant3.png,bus
+19,Feedback,0.9723288,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//deletionlowmatched_person6.png,person
+20,Feedback,0.5980103,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_deletionhighmatched_bird3.png,cat
+21,Feedback,0.7390665,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_partialViewinglowmatched_building5.png,building
+22,Feedback,1.0287394,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//ms_bloblowmatched_tree9.png,tree
+23,Feedback,0.9720911,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_bird5.png,bird
+24,Feedback,1.0994011,correct,C://Users//veoni//Desktop//THESIS//Task//Everything//lp_matched_bird1.png,bird
+25,Feedback,0.5074337,incorrect,C://Users//veoni//Desktop//THESIS//Task//Everything//hp_matched_firehydrant1.png,fire hydrant
