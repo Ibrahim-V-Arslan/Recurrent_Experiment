@@ -3,6 +3,10 @@ Created on Fri Nov 18 16:41:47 2022
 
 @author: Ibrahim
 Necessary Things:
+    1. Also write the main loop without feedback not that hard.
+    2. Mask number issue.
+    3. Add breaks in between and give correctness ratio (also maybe mean reaction time?)
+    4. Stimulus Category? Should I divide it two? Objects and blocking technique?
 """
 from psychopy import visual, core, event, gui
 import random, os, sys
@@ -30,9 +34,6 @@ if os.path.isfile(file_name): #if pt num exists -> error msg + close sys
     print("ERROR!!! Participant Number already exists.\n")  
     sys.exit()
 
-
-
-    
 #create window based on pre-determined height and width    
 win = visual.Window(size = (HEIGHT,WIDTH), units = ('pix'), fullscr = True)
 win.mouseVisible = False
@@ -43,7 +44,7 @@ face_images = []
 for file1 in os.listdir(folderPath):
     if file1.lower().endswith(".png"):
         face_images.append(os.path.join(folderPath,file1))
-#Mask Directory (Currently Missing)
+#Mask Directory
 msk_dir = "C://Users//veoni//Desktop//THESIS//Task//mask_img//"
 mask_images = []
 #add face stimuli to previously created list       
@@ -53,6 +54,12 @@ for file2 in os.listdir(msk_dir):
 #randomize image order
 random.shuffle(face_images)
 random.shuffle(mask_images)
+# For randomization to determine which trials to have masks
+ls = []
+for it in range(0,1360):
+    ls.append(it)
+ls_new = random.sample(ls, 680)
+
 #directories for instructions
 instr_b_d = "C://Users//veoni//Desktop//THESIS//Task//Instructions//beg.PNG"
 instr_m_d = "C://Users//veoni//Desktop//THESIS//Task//Instructions//mid.PNG"
@@ -89,8 +96,6 @@ msk_list = []
 #Trial number
 trial_list =[]
 
-
-
 instr_beg.draw(win)
 win.flip()
 if event.waitKeys(keyList=['space']): #if pt presses space --> start exp
@@ -107,7 +112,7 @@ for trial in range(len(face_images)): #don't forget to change it to len(face_ima
     if trial <= 24: #trials with the feedback normally 24
         expcond_list.append("Feedback") #add 'feedback' label to the exp condition list   
         stim_f = os.path.join(face_images[trial]) #stim_f is the path name to access face stimuli files
-        ct_list.append(stim_f)
+        ct_list.append(stim_f[53:-4]) 
         trial_list.append(trial + 1)
         stimm_f = visual.ImageStim(win, image=stim_f) #PsychoPy representation of the visual face stimulus
         stimm_f.draw(win) #show stimulus
@@ -116,9 +121,12 @@ for trial in range(len(face_images)): #don't forget to change it to len(face_ima
         win.flip()
         stim_m = os.path.join(mask_images[trial])
         stimm_m = visual.ImageStim(win, image = stim_m)
-        stimm_m.draw(win)
-        win.flip()
-        core.wait(0.3)
+        msk_list.append("Unmasked")
+        if trial in ls_new:
+            msk_list[trial] = ("Masked")
+            stimm_m.draw(win)
+            win.flip()
+            core.wait(0.3)    
         q_stim.draw(win)
         win.flip()
         RT = core.Clock()    #instantiate stopwatch
@@ -129,8 +137,8 @@ for trial in range(len(face_images)): #don't forget to change it to len(face_ima
                 core.quit()
             if event.getKeys(keyList=['q']): #if pt presses Q 
                 RT_list.append(RT.getTime())
-                stimm_a = 'fire hydrant'
-                ptresp_list.append("firehydrant") #call response 'fire hydrant' and append it to ptresp list
+                stimm_a = 'firehydrant'
+                ptresp_list.append("fire hydrant") #call response 'fire hydrant' and append it to ptresp list
                 continueQuestion = False
                 win.flip() 
             elif event.getKeys(keyList=['w']):#if pt presses W
@@ -200,7 +208,7 @@ win.close()
 #DATA OUTPUT
     
 #make dictionary with all collected data we added to lists, "Trial Number":trial
-info_dict = {"Trial Number":trial_list,"Condition": expcond_list,'Reaction Time': RT_list,"Accuracy":acc_list, "Stimulus Category": ct_list,"Participant Choice Category": ptresp_list}
+info_dict = {"Trial Number":trial_list,"Condition": expcond_list,'Reaction Time': RT_list,"Accuracy":acc_list, "Stimulus Category": ct_list,"Participant Choice Category": ptresp_list, 'Masking Condition': msk_list}
 #'Masking Condition': msk_list     
 df = pd.DataFrame(info_dict) #use pandas
 df.to_csv(file_name,index=False) #convert file to CSV 
