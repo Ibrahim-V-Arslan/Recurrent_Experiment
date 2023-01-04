@@ -1,0 +1,26 @@
+Participant Number,Trial Number,Condition,Reaction Time,Accuracy,Stimulus Category,Participant Choice Category,Masking Condition
+['42'],1,Feedback,1.4265830000076676,correct,lp_matched_firehydrant2,fire hydrant,Unmasked
+['42'],2,Feedback,0.5076915000099689,incorrect,bloblowmatched_banana7,bus,Masked
+['42'],3,Feedback,0.6002509999962058,incorrect,ms_partialViewinghighmatched_bird10,bus,Masked
+['42'],4,Feedback,0.8186954999982845,correct,ms_deletionlowmatched_cat4,cat,Masked
+['42'],5,Feedback,0.8277051000040956,correct,ms_partialViewinglowmatched_bus7,bus,Unmasked
+['42'],6,Feedback,1.3329757999890717,correct,deletionlowmatched_cat1,cat,Masked
+['42'],7,Feedback,0.6791538999968907,correct,bloblowmatched_bird8,bird,Masked
+['42'],8,Feedback,0.769893000004231,incorrect,ms_deletionhighmatched_banana7,bus,Unmasked
+['42'],9,Feedback,1.1132398000045214,correct,ms_deletionhighmatched_tree6,tree,Unmasked
+['42'],10,Feedback,0.9248182000010274,correct,ms_partialViewinglowmatched_building3,building,Masked
+['42'],11,Feedback,0.44978850000188686,incorrect,lightcluttermatched_tree10,building,Masked
+['42'],12,Feedback,0.42484190000686795,correct,heavycluttermatched_tree6,tree,Masked
+['42'],13,Feedback,0.9133678999933181,correct,ms_bloblowmatched_cat1,cat,Masked
+['42'],14,Feedback,1.0203961999941384,correct,lightcluttermatched_banana4,banana,Unmasked
+['42'],15,Feedback,0.5680408000043826,correct,lightcluttermatched_tree4,tree,Masked
+['42'],16,Feedback,0.428852500001085,correct,control_firehydrant10,fire hydrant,Masked
+['42'],17,Feedback,0.7961205000028713,correct,heavycluttermatched_building10,building,Masked
+['42'],18,Feedback,0.9390557000006083,incorrect,ms_partialViewinghighmatched_firehydrant6,tree,Masked
+['42'],19,Feedback,0.7767623999970965,correct,partialViewinghighmatched_firehydrant4,fire hydrant,Masked
+['42'],20,Feedback,0.8577884999976959,incorrect,heavycluttermatched_building7,person,Masked
+['42'],21,Feedback,1.9347216000023764,incorrect,ms_deletionlowmatched_banana8,tree,Unmasked
+['42'],22,Feedback,0.6120577999972738,correct,partialViewinghighmatched_person3,person,Unmasked
+['42'],23,Feedback,1.0079384999989998,incorrect,ms_blobhighmatched_bird3,building,Unmasked
+['42'],24,Feedback,2.0904217999923276,correct,deletionlowmatched_building5,building,Masked
+['42'],25,Feedback,1.2945445999939693,incorrect,partialViewinghighmatched_banana9,tree,Unmasked

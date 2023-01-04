@@ -1,1 +1,26 @@
-Condition,Reaction Time,Accuracy,Stimulus Category,Participant Choice Category,Masking Condition
+Trial Number,Condition,Reaction Time,Accuracy,Stimulus Category,Participant Choice Category,Masking Condition
+1,Feedback,4.0272098,correct,deletionhighmatched_banana1,banana,Unmasked
+2,Feedback,0.6465829,correct,lightcluttermatched_person6,person,Unmasked
+3,Feedback,0.5432178,incorrect,ms_partialViewinglowmatched_bird1,person,Unmasked
+4,Feedback,0.8690914,correct,partialViewinghighmatched_tree6,tree,Unmasked
+5,Feedback,1.2903674,correct,ms_bloblowmatched_firehydrant10,fire hydrant,Masked
+6,Feedback,0.4908393,correct,deletionlowmatched_firehydrant10,fire hydrant,Unmasked
+7,Feedback,0.4194948,correct,ms_deletionlowmatched_firehydrant1,fire hydrant,Masked
+8,Feedback,1.3581867,correct,control_bird9,bird,Unmasked
+9,Feedback,1.0008553,incorrect,blobhighmatched_person8,fire hydrant,Masked
+10,Feedback,0.3772429,correct,heavycluttermatched_firehydrant7,fire hydrant,Masked
+11,Feedback,1.4101979,correct,ms_partialViewinglowmatched_building8,building,Unmasked
+12,Feedback,0.9073521,correct,ms_bloblowmatched_bird10,bird,Masked
+13,Feedback,18.1722136,incorrect,ms_deletionlowmatched_person9,banana,Unmasked
+14,Feedback,5.2449885,incorrect,blobhighmatched_firehydrant2,bus,Unmasked
+15,Feedback,4.3454051,incorrect,hp_matched_bird1,banana,Masked
+16,Feedback,1.6707878,incorrect,control_bird5,banana,Masked
+17,Feedback,27.5874313,correct,ms_blobhighmatched_building2,building,Masked
+18,Feedback,1.1207467,correct,ms_blobhighmatched_building5,building,Masked
+19,Feedback,1.9564376,correct,deletionlowmatched_banana8,banana,Masked
+20,Feedback,1.7270212,correct,hp_matched_building10,building,Unmasked
+21,Feedback,1.127203,correct,heavycluttermatched_tree3,tree,Unmasked
+22,Feedback,1.1046635,correct,partialViewinglowmatched_firehydrant4,fire hydrant,Unmasked
+23,Feedback,1.9629295,correct,ms_bloblowmatched_cat5,cat,Masked
+24,Feedback,1.0698279,correct,lp_matched_tree3,tree,Unmasked
+25,Feedback,0.9298375,incorrect,deletionhighmatched_bus5,building,Masked

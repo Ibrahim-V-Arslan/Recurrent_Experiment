@@ -1,0 +1,26 @@
+Participant Number,Trial Number,Condition,Reaction Time,Accuracy,Stimulus Category,Participant Choice Category,Masking Condition
+['43'],1,Feedback,0.9085366999934195,correct,hp_matched_firehydrant1,fire hydrant,Unmasked
+['43'],2,Feedback,0.4520903999946313,correct,deletionhighmatched_bus5,bus,Masked
+['43'],3,Feedback,0.9908742999978131,correct,lightcluttermatched_firehydrant10,fire hydrant,Unmasked
+['43'],4,Feedback,0.7978229000000283,correct,heavycluttermatched_cat4,cat,Unmasked
+['43'],5,Feedback,0.6591381000034744,correct,lp_matched_cat8,cat,Masked
+['43'],6,Feedback,0.9970351999945706,correct,deletionlowmatched_person5,person,Unmasked
+['43'],7,Feedback,0.856010100003914,incorrect,ms_deletionhighmatched_bird3,person,Masked
+['43'],8,Feedback,0.850298199991812,incorrect,ms_partialViewinghighmatched_tree9,bus,Masked
+['43'],9,Feedback,0.5576388000044972,incorrect,blobhighmatched_person8,fire hydrant,Masked
+['43'],10,Feedback,0.7178977000003215,incorrect,deletionhighmatched_building3,person,Masked
+['43'],11,Feedback,1.4962308999965899,incorrect,ms_partialViewinghighmatched_bird3,building,Unmasked
+['43'],12,Feedback,0.5108593999902951,correct,lightcluttermatched_cat5,cat,Masked
+['43'],13,Feedback,0.3770020000083605,correct,control_firehydrant10,fire hydrant,Masked
+['43'],14,Feedback,0.28463160000683274,correct,control_firehydrant4,fire hydrant,Masked
+['43'],15,Feedback,1.1658489000110421,incorrect,bloblowmatched_tree5,building,Masked
+['43'],16,Feedback,0.7243617999920389,correct,deletionhighmatched_tree2,tree,Unmasked
+['43'],17,Feedback,0.6643278999981703,correct,partialViewinglowmatched_firehydrant7,fire hydrant,Unmasked
+['43'],18,Feedback,1.949436999988393,correct,heavycluttermatched_banana5,banana,Unmasked
+['43'],19,Feedback,0.7799843999964651,correct,ms_deletionlowmatched_bus2,bus,Masked
+['43'],20,Feedback,1.0717405000032159,correct,ms_partialViewinglowmatched_bird1,bird,Masked
+['43'],21,Feedback,1.1243968000053428,correct,deletionlowmatched_bird2,bird,Unmasked
+['43'],22,Feedback,0.3487767000042368,correct,deletionhighmatched_firehydrant2,fire hydrant,Masked
+['43'],23,Feedback,1.0911268000054406,correct,blobhighmatched_banana9,banana,Masked
+['43'],24,Feedback,1.020550599991111,correct,ms_bloblowmatched_tree7,tree,Masked
+['43'],25,Feedback,1.388960500000394,correct,ms_partialViewinglowmatched_bird6,bird,Unmasked

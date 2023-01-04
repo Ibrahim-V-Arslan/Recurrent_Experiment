@@ -1,0 +1,26 @@
+Participant Number,Trial Number,Condition,Difficulty,Size_Occlusion,Occlusion Type,Masking Condition,Manipulation,Pressed Key,Category,Selected Category,Accuracy,Reaction Time,Stimulus Category
+44,1,Feedback,light,null,null,Masked,cluttter,r,banana,banana,correct,0.6820060000027297,lightcluttermatched_banana6
+44,2,Feedback,control,null,null,Unmasked,control,w,cat,cat,correct,1.0657584000000497,control_cat4
+44,3,Feedback,low,many_small,null,Unmasked,control,i,building,building,correct,1.9937878000055207,ms_bloblowmatched_building1
+44,4,Feedback,low,null,null,Unmasked,control,e,bus,bus,correct,1.9678122000041185,partialViewinglowmatched_bus3
+44,5,Feedback,low,null,null,Masked,control,u,tree,tree,correct,1.0077052999986336,bloblowmatched_tree6
+44,6,Feedback,highpass,null,null,Unmasked,control,i,bus,building,incorrect,0.0001145999995060265,hp_matched_bus7
+44,7,Feedback,high,many_small,null,Unmasked,control,e,banana,bus,incorrect,1.3340728000039235,ms_blobhighmatched_banana1
+44,8,Feedback,low,null,null,Masked,control,o,person,person,correct,0.624012500004028,partialViewinglowmatched_person10
+44,9,Feedback,high,many_small,deletion,Masked,control,u,bird,tree,incorrect,1.1848116000037408,ms_deletionhighmatched_bird1
+44,10,Feedback,heavy,null,null,Unmasked,cluttter,o,person,person,correct,0.7740927999984706,heavycluttermatched_person1
+44,11,Feedback,control,null,null,Masked,control,i,tree,building,incorrect,1.1489127999957418,control_tree3
+44,12,Feedback,heavy,null,null,Unmasked,cluttter,q,firehydrant,fire hydrant,correct,0.6773249999969266,heavycluttermatched_firehydrant7
+44,13,Feedback,high,null,null,Unmasked,control,p,bird,bird,correct,0.8331204999994952,partialViewinghighmatched_bird8
+44,14,Feedback,highpass,null,null,Unmasked,control,p,bird,bird,correct,0.8539440000022296,hp_matched_bird7
+44,15,Feedback,high,many_small,null,Unmasked,control,w,cat,cat,correct,0.9362038999970537,ms_blobhighmatched_cat9
+44,16,Feedback,low,many_small,null,Masked,control,u,tree,tree,correct,0.7225952000007965,ms_partialViewinglowmatched_tree3
+44,17,Feedback,high,many_small,deletion,Masked,control,e,bus,bus,correct,0.5647644999990007,ms_deletionhighmatched_bus5
+44,18,Feedback,low,many_small,null,Masked,control,u,firehydrant,tree,incorrect,0.9134194999933243,ms_partialViewinglowmatched_firehydrant1
+44,19,Feedback,control,null,null,Masked,control,e,bus,bus,correct,0.4534055999974953,control_bus6
+44,20,Feedback,lowpass,null,null,Unmasked,control,r,banana,banana,correct,1.169594600010896,lp_matched_banana7
+44,21,Feedback,low,null,null,Unmasked,control,p,bird,bird,correct,0.7036772999999812,partialViewinglowmatched_bird2
+44,22,Feedback,high,many_small,null,Masked,control,e,cat,bus,incorrect,0.7157890999951633,ms_partialViewinghighmatched_cat10
+44,23,Feedback,light,null,null,Unmasked,cluttter,o,person,person,correct,1.3712591999938013,lightcluttermatched_person5
+44,24,Feedback,heavy,null,null,Masked,cluttter,w,cat,cat,correct,0.7083216000028187,heavycluttermatched_cat3
+44,25,Feedback,high,null,deletion,Masked,control,u,building,tree,incorrect,1.0208063000027323,deletionhighmatched_building7
