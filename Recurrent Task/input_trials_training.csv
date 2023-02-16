@@ -1,0 +1,337 @@
+,filename,mask_filename,category,manipulation,difficulty,mask,type_occl,size_occl,soa
+0,Training\Training Stimulus\blobhighmatched_banana2093.png,mask_img/000000000009.png,banana,occlusion,high,mask,blob,null,0.05
+1,Training\Training Stimulus\blobhighmatched_bird2861.png,mask_img/000000000294.png,bird,occlusion,high,mask,blob,null,0.05
+2,Training\Training Stimulus\blobhighmatched_building13.png,mask_img/000000000510.png,building,occlusion,high,mask,blob,null,0.05
+3,Training\Training Stimulus\blobhighmatched_bus480.png,mask_img/000000000562.png,bus,occlusion,high,mask,blob,null,0.05
+4,Training\Training Stimulus\blobhighmatched_cat172.png,mask_img/000000000671.png,cat,occlusion,high,mask,blob,null,0.05
+5,Training\Training Stimulus\blobhighmatched_firehydrant125.png,mask_img/000000000675.png,firehydrant,occlusion,high,mask,blob,null,0.05
+6,Training\Training Stimulus\blobhighmatched_person2850.png,mask_img/000000000711.png,person,occlusion,high,mask,blob,null,0.05
+7,Training\Training Stimulus\blobhighmatched_tree88.png,mask_img/000000001025.png,tree,occlusion,high,mask,blob,null,0.05
+8,Training\Training Stimulus\bloblowmatched_banana3652.png,mask_img/000000001216.png,banana,occlusion,low,mask,blob,null,0.05
+9,Training\Training Stimulus\bloblowmatched_bird289.png,mask_img/000000001282.png,bird,occlusion,low,mask,blob,null,0.05
+10,Training\Training Stimulus\bloblowmatched_building64.png,mask_img/000000001563.png,building,occlusion,low,mask,blob,null,0.05
+11,Training\Training Stimulus\bloblowmatched_bus938.png,mask_img/000000001573.png,bus,occlusion,low,mask,blob,null,0.05
+12,Training\Training Stimulus\bloblowmatched_cat1021.png,mask_img/000000001599.png,cat,occlusion,low,mask,blob,null,0.05
+13,Training\Training Stimulus\bloblowmatched_firehydrant570.png,mask_img/000000001810.png,firehydrant,occlusion,low,mask,blob,null,0.05
+14,Training\Training Stimulus\bloblowmatched_person411.png,mask_img/000000001852.png,person,occlusion,low,mask,blob,null,0.05
+15,Training\Training Stimulus\bloblowmatched_tree50.png,mask_img/000000001912.png,tree,occlusion,low,mask,blob,null,0.05
+16,Training\Training Stimulus\control_banana3666.png,mask_img/000000001966.png,banana,control,control,mask,null,null,0.05
+17,Training\Training Stimulus\control_bird259.png,mask_img/000000002068.png,bird,control,control,mask,null,null,0.05
+18,Training\Training Stimulus\control_building95.png,mask_img/000000002239.png,building,control,control,mask,null,null,0.05
+19,Training\Training Stimulus\control_bus180.png,mask_img/000000002562.png,bus,control,control,mask,null,null,0.05
+20,Training\Training Stimulus\control_cat147.png,mask_img/000000002591.png,cat,control,control,mask,null,null,0.05
+21,Training\Training Stimulus\control_firehydrant46.png,mask_img/000000002902.png,firehydrant,control,control,mask,null,null,0.05
+22,Training\Training Stimulus\control_person1905.png,mask_img/000000003000.png,person,control,control,mask,null,null,0.05
+23,Training\Training Stimulus\control_tree2.png,mask_img/000000003160.png,tree,control,control,mask,null,null,0.05
+24,Training\Training Stimulus\deletionhighmatched_banana1970.png,mask_img/000000003236.png,banana,occlusion,high,mask,deletion,null,0.05
+25,Training\Training Stimulus\deletionhighmatched_bird1657.png,mask_img/000000003320.png,bird,occlusion,high,mask,deletion,null,0.05
+26,Training\Training Stimulus\deletionhighmatched_building66.png,mask_img/000000003729.png,building,occlusion,high,mask,deletion,null,0.05
+27,Training\Training Stimulus\deletionhighmatched_bus696.png,mask_img/000000003779.png,bus,occlusion,high,mask,deletion,null,0.05
+28,Training\Training Stimulus\deletionhighmatched_cat313.png,mask_img/000000003804.png,cat,occlusion,high,mask,deletion,null,0.05
+29,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,mask_img/000000003865.png,firehydrant,occlusion,high,mask,deletion,null,0.05
+30,Training\Training Stimulus\deletionhighmatched_person71.png,mask_img/000000004444.png,person,occlusion,high,mask,deletion,null,0.05
+31,Training\Training Stimulus\deletionhighmatched_tree71.png,mask_img/000000004497.png,tree,occlusion,high,mask,deletion,null,0.05
+32,Training\Training Stimulus\deletionlowmatched_banana4227.png,mask_img/000000004706.png,banana,occlusion,low,mask,deletion,null,0.05
+33,Training\Training Stimulus\deletionlowmatched_bird289.png,mask_img/000000004785.png,bird,occlusion,low,mask,deletion,null,0.05
+34,Training\Training Stimulus\deletionlowmatched_building91.png,mask_img/000000004827.png,building,occlusion,low,mask,deletion,null,0.05
+35,Training\Training Stimulus\deletionlowmatched_bus1255.png,mask_img/000000004920.png,bus,occlusion,low,mask,deletion,null,0.05
+36,Training\Training Stimulus\deletionlowmatched_cat356.png,mask_img/000000004970.png,cat,occlusion,low,mask,deletion,null,0.05
+37,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,mask_img/000000005021.png,firehydrant,occlusion,low,mask,deletion,null,0.05
+38,Training\Training Stimulus\deletionlowmatched_person1622.png,mask_img/000000005123.png,person,occlusion,low,mask,deletion,null,0.05
+39,Training\Training Stimulus\deletionlowmatched_tree37.png,mask_img/000000005245.png,tree,occlusion,low,mask,deletion,null,0.05
+40,Training\Training Stimulus\partialViewinghighmatched_banana726.png,mask_img/000000005313.png,banana,occlusion,high,mask,partial viewing,null,0.05
+41,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,mask_img/000000005385.png,bird,occlusion,high,mask,partial viewing,null,0.05
+42,Training\Training Stimulus\partialViewinghighmatched_building21.png,mask_img/000000005443.png,building,occlusion,high,mask,partial viewing,null,0.05
+43,Training\Training Stimulus\partialViewinghighmatched_bus765.png,mask_img/000000005619.png,bus,occlusion,high,mask,partial viewing,null,0.05
+44,Training\Training Stimulus\partialViewinghighmatched_cat864.png,mask_img/000000006042.png,cat,occlusion,high,mask,partial viewing,null,0.05
+45,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,mask_img/000000006091.png,firehydrant,occlusion,high,mask,partial viewing,null,0.05
+46,Training\Training Stimulus\partialViewinghighmatched_person157.png,mask_img/000000006190.png,person,occlusion,high,mask,partial viewing,null,0.05
+47,Training\Training Stimulus\partialViewinghighmatched_tree56.png,mask_img/000000006334.png,tree,occlusion,high,mask,partial viewing,null,0.05
+48,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,mask_img/000000006393.png,banana,occlusion,low,mask,partial viewing,null,0.05
+49,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,mask_img/000000006489.png,bird,occlusion,low,mask,partial viewing,null,0.05
+50,Training\Training Stimulus\partialViewinglowmatched_building11.png,mask_img/000000006491.png,building,occlusion,low,mask,partial viewing,null,0.05
+51,Training\Training Stimulus\partialViewinglowmatched_bus127.png,mask_img/000000006590.png,bus,occlusion,low,mask,partial viewing,null,0.05
+52,Training\Training Stimulus\partialViewinglowmatched_cat341.png,mask_img/000000006662.png,cat,occlusion,low,mask,partial viewing,null,0.05
+53,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,mask_img/000000006744.png,firehydrant,occlusion,low,mask,partial viewing,null,0.05
+54,Training\Training Stimulus\partialViewinglowmatched_person3250.png,mask_img/000000006842.png,person,occlusion,low,mask,partial viewing,null,0.05
+55,Training\Training Stimulus\partialViewinglowmatched_tree30.png,mask_img/000000006870.png,tree,occlusion,low,mask,partial viewing,null,0.05
+56,Training\Training Stimulus\blobhighmatched_banana2093.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,blob,null,0.05
+57,Training\Training Stimulus\blobhighmatched_bird2861.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,blob,null,0.05
+58,Training\Training Stimulus\blobhighmatched_building13.png,./mask_img/grey_square.png,building,occlusion,high,no mask,blob,null,0.05
+59,Training\Training Stimulus\blobhighmatched_bus480.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,blob,null,0.05
+60,Training\Training Stimulus\blobhighmatched_cat172.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,blob,null,0.05
+61,Training\Training Stimulus\blobhighmatched_firehydrant125.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,blob,null,0.05
+62,Training\Training Stimulus\blobhighmatched_person2850.png,./mask_img/grey_square.png,person,occlusion,high,no mask,blob,null,0.05
+63,Training\Training Stimulus\blobhighmatched_tree88.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,blob,null,0.05
+64,Training\Training Stimulus\bloblowmatched_banana3652.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,blob,null,0.05
+65,Training\Training Stimulus\bloblowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,blob,null,0.05
+66,Training\Training Stimulus\bloblowmatched_building64.png,./mask_img/grey_square.png,building,occlusion,low,no mask,blob,null,0.05
+67,Training\Training Stimulus\bloblowmatched_bus938.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,blob,null,0.05
+68,Training\Training Stimulus\bloblowmatched_cat1021.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,blob,null,0.05
+69,Training\Training Stimulus\bloblowmatched_firehydrant570.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,blob,null,0.05
+70,Training\Training Stimulus\bloblowmatched_person411.png,./mask_img/grey_square.png,person,occlusion,low,no mask,blob,null,0.05
+71,Training\Training Stimulus\bloblowmatched_tree50.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,blob,null,0.05
+72,Training\Training Stimulus\control_banana3666.png,./mask_img/grey_square.png,banana,control,control,no mask,null,null,0.05
+73,Training\Training Stimulus\control_bird259.png,./mask_img/grey_square.png,bird,control,control,no mask,null,null,0.05
+74,Training\Training Stimulus\control_building95.png,./mask_img/grey_square.png,building,control,control,no mask,null,null,0.05
+75,Training\Training Stimulus\control_bus180.png,./mask_img/grey_square.png,bus,control,control,no mask,null,null,0.05
+76,Training\Training Stimulus\control_cat147.png,./mask_img/grey_square.png,cat,control,control,no mask,null,null,0.05
+77,Training\Training Stimulus\control_firehydrant46.png,./mask_img/grey_square.png,firehydrant,control,control,no mask,null,null,0.05
+78,Training\Training Stimulus\control_person1905.png,./mask_img/grey_square.png,person,control,control,no mask,null,null,0.05
+79,Training\Training Stimulus\control_tree2.png,./mask_img/grey_square.png,tree,control,control,no mask,null,null,0.05
+80,Training\Training Stimulus\deletionhighmatched_banana1970.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,deletion,null,0.05
+81,Training\Training Stimulus\deletionhighmatched_bird1657.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,deletion,null,0.05
+82,Training\Training Stimulus\deletionhighmatched_building66.png,./mask_img/grey_square.png,building,occlusion,high,no mask,deletion,null,0.05
+83,Training\Training Stimulus\deletionhighmatched_bus696.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,deletion,null,0.05
+84,Training\Training Stimulus\deletionhighmatched_cat313.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,deletion,null,0.05
+85,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,deletion,null,0.05
+86,Training\Training Stimulus\deletionhighmatched_person71.png,./mask_img/grey_square.png,person,occlusion,high,no mask,deletion,null,0.05
+87,Training\Training Stimulus\deletionhighmatched_tree71.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,deletion,null,0.05
+88,Training\Training Stimulus\deletionlowmatched_banana4227.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,deletion,null,0.05
+89,Training\Training Stimulus\deletionlowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,deletion,null,0.05
+90,Training\Training Stimulus\deletionlowmatched_building91.png,./mask_img/grey_square.png,building,occlusion,low,no mask,deletion,null,0.05
+91,Training\Training Stimulus\deletionlowmatched_bus1255.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,deletion,null,0.05
+92,Training\Training Stimulus\deletionlowmatched_cat356.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,deletion,null,0.05
+93,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,deletion,null,0.05
+94,Training\Training Stimulus\deletionlowmatched_person1622.png,./mask_img/grey_square.png,person,occlusion,low,no mask,deletion,null,0.05
+95,Training\Training Stimulus\deletionlowmatched_tree37.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,deletion,null,0.05
+96,Training\Training Stimulus\partialViewinghighmatched_banana726.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,partial viewing,null,0.05
+97,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,partial viewing,null,0.05
+98,Training\Training Stimulus\partialViewinghighmatched_building21.png,./mask_img/grey_square.png,building,occlusion,high,no mask,partial viewing,null,0.05
+99,Training\Training Stimulus\partialViewinghighmatched_bus765.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,partial viewing,null,0.05
+100,Training\Training Stimulus\partialViewinghighmatched_cat864.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,partial viewing,null,0.05
+101,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,partial viewing,null,0.05
+102,Training\Training Stimulus\partialViewinghighmatched_person157.png,./mask_img/grey_square.png,person,occlusion,high,no mask,partial viewing,null,0.05
+103,Training\Training Stimulus\partialViewinghighmatched_tree56.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,partial viewing,null,0.05
+104,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,partial viewing,null,0.05
+105,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,partial viewing,null,0.05
+106,Training\Training Stimulus\partialViewinglowmatched_building11.png,./mask_img/grey_square.png,building,occlusion,low,no mask,partial viewing,null,0.05
+107,Training\Training Stimulus\partialViewinglowmatched_bus127.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,partial viewing,null,0.05
+108,Training\Training Stimulus\partialViewinglowmatched_cat341.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,partial viewing,null,0.05
+109,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,partial viewing,null,0.05
+110,Training\Training Stimulus\partialViewinglowmatched_person3250.png,./mask_img/grey_square.png,person,occlusion,low,no mask,partial viewing,null,0.05
+111,Training\Training Stimulus\partialViewinglowmatched_tree30.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,partial viewing,null,0.05
+112,Training\Training Stimulus\blobhighmatched_banana2093.png,mask_img/000000000009.png,banana,occlusion,high,mask,blob,null,0.1
+113,Training\Training Stimulus\blobhighmatched_bird2861.png,mask_img/000000000294.png,bird,occlusion,high,mask,blob,null,0.1
+114,Training\Training Stimulus\blobhighmatched_building13.png,mask_img/000000000510.png,building,occlusion,high,mask,blob,null,0.1
+115,Training\Training Stimulus\blobhighmatched_bus480.png,mask_img/000000000562.png,bus,occlusion,high,mask,blob,null,0.1
+116,Training\Training Stimulus\blobhighmatched_cat172.png,mask_img/000000000671.png,cat,occlusion,high,mask,blob,null,0.1
+117,Training\Training Stimulus\blobhighmatched_firehydrant125.png,mask_img/000000000675.png,firehydrant,occlusion,high,mask,blob,null,0.1
+118,Training\Training Stimulus\blobhighmatched_person2850.png,mask_img/000000000711.png,person,occlusion,high,mask,blob,null,0.1
+119,Training\Training Stimulus\blobhighmatched_tree88.png,mask_img/000000001025.png,tree,occlusion,high,mask,blob,null,0.1
+120,Training\Training Stimulus\bloblowmatched_banana3652.png,mask_img/000000001216.png,banana,occlusion,low,mask,blob,null,0.1
+121,Training\Training Stimulus\bloblowmatched_bird289.png,mask_img/000000001282.png,bird,occlusion,low,mask,blob,null,0.1
+122,Training\Training Stimulus\bloblowmatched_building64.png,mask_img/000000001563.png,building,occlusion,low,mask,blob,null,0.1
+123,Training\Training Stimulus\bloblowmatched_bus938.png,mask_img/000000001573.png,bus,occlusion,low,mask,blob,null,0.1
+124,Training\Training Stimulus\bloblowmatched_cat1021.png,mask_img/000000001599.png,cat,occlusion,low,mask,blob,null,0.1
+125,Training\Training Stimulus\bloblowmatched_firehydrant570.png,mask_img/000000001810.png,firehydrant,occlusion,low,mask,blob,null,0.1
+126,Training\Training Stimulus\bloblowmatched_person411.png,mask_img/000000001852.png,person,occlusion,low,mask,blob,null,0.1
+127,Training\Training Stimulus\bloblowmatched_tree50.png,mask_img/000000001912.png,tree,occlusion,low,mask,blob,null,0.1
+128,Training\Training Stimulus\control_banana3666.png,mask_img/000000001966.png,banana,control,control,mask,null,null,0.1
+129,Training\Training Stimulus\control_bird259.png,mask_img/000000002068.png,bird,control,control,mask,null,null,0.1
+130,Training\Training Stimulus\control_building95.png,mask_img/000000002239.png,building,control,control,mask,null,null,0.1
+131,Training\Training Stimulus\control_bus180.png,mask_img/000000002562.png,bus,control,control,mask,null,null,0.1
+132,Training\Training Stimulus\control_cat147.png,mask_img/000000002591.png,cat,control,control,mask,null,null,0.1
+133,Training\Training Stimulus\control_firehydrant46.png,mask_img/000000002902.png,firehydrant,control,control,mask,null,null,0.1
+134,Training\Training Stimulus\control_person1905.png,mask_img/000000003000.png,person,control,control,mask,null,null,0.1
+135,Training\Training Stimulus\control_tree2.png,mask_img/000000003160.png,tree,control,control,mask,null,null,0.1
+136,Training\Training Stimulus\deletionhighmatched_banana1970.png,mask_img/000000003236.png,banana,occlusion,high,mask,deletion,null,0.1
+137,Training\Training Stimulus\deletionhighmatched_bird1657.png,mask_img/000000003320.png,bird,occlusion,high,mask,deletion,null,0.1
+138,Training\Training Stimulus\deletionhighmatched_building66.png,mask_img/000000003729.png,building,occlusion,high,mask,deletion,null,0.1
+139,Training\Training Stimulus\deletionhighmatched_bus696.png,mask_img/000000003779.png,bus,occlusion,high,mask,deletion,null,0.1
+140,Training\Training Stimulus\deletionhighmatched_cat313.png,mask_img/000000003804.png,cat,occlusion,high,mask,deletion,null,0.1
+141,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,mask_img/000000003865.png,firehydrant,occlusion,high,mask,deletion,null,0.1
+142,Training\Training Stimulus\deletionhighmatched_person71.png,mask_img/000000004444.png,person,occlusion,high,mask,deletion,null,0.1
+143,Training\Training Stimulus\deletionhighmatched_tree71.png,mask_img/000000004497.png,tree,occlusion,high,mask,deletion,null,0.1
+144,Training\Training Stimulus\deletionlowmatched_banana4227.png,mask_img/000000004706.png,banana,occlusion,low,mask,deletion,null,0.1
+145,Training\Training Stimulus\deletionlowmatched_bird289.png,mask_img/000000004785.png,bird,occlusion,low,mask,deletion,null,0.1
+146,Training\Training Stimulus\deletionlowmatched_building91.png,mask_img/000000004827.png,building,occlusion,low,mask,deletion,null,0.1
+147,Training\Training Stimulus\deletionlowmatched_bus1255.png,mask_img/000000004920.png,bus,occlusion,low,mask,deletion,null,0.1
+148,Training\Training Stimulus\deletionlowmatched_cat356.png,mask_img/000000004970.png,cat,occlusion,low,mask,deletion,null,0.1
+149,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,mask_img/000000005021.png,firehydrant,occlusion,low,mask,deletion,null,0.1
+150,Training\Training Stimulus\deletionlowmatched_person1622.png,mask_img/000000005123.png,person,occlusion,low,mask,deletion,null,0.1
+151,Training\Training Stimulus\deletionlowmatched_tree37.png,mask_img/000000005245.png,tree,occlusion,low,mask,deletion,null,0.1
+152,Training\Training Stimulus\partialViewinghighmatched_banana726.png,mask_img/000000005313.png,banana,occlusion,high,mask,partial viewing,null,0.1
+153,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,mask_img/000000005385.png,bird,occlusion,high,mask,partial viewing,null,0.1
+154,Training\Training Stimulus\partialViewinghighmatched_building21.png,mask_img/000000005443.png,building,occlusion,high,mask,partial viewing,null,0.1
+155,Training\Training Stimulus\partialViewinghighmatched_bus765.png,mask_img/000000005619.png,bus,occlusion,high,mask,partial viewing,null,0.1
+156,Training\Training Stimulus\partialViewinghighmatched_cat864.png,mask_img/000000006042.png,cat,occlusion,high,mask,partial viewing,null,0.1
+157,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,mask_img/000000006091.png,firehydrant,occlusion,high,mask,partial viewing,null,0.1
+158,Training\Training Stimulus\partialViewinghighmatched_person157.png,mask_img/000000006190.png,person,occlusion,high,mask,partial viewing,null,0.1
+159,Training\Training Stimulus\partialViewinghighmatched_tree56.png,mask_img/000000006334.png,tree,occlusion,high,mask,partial viewing,null,0.1
+160,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,mask_img/000000006393.png,banana,occlusion,low,mask,partial viewing,null,0.1
+161,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,mask_img/000000006489.png,bird,occlusion,low,mask,partial viewing,null,0.1
+162,Training\Training Stimulus\partialViewinglowmatched_building11.png,mask_img/000000006491.png,building,occlusion,low,mask,partial viewing,null,0.1
+163,Training\Training Stimulus\partialViewinglowmatched_bus127.png,mask_img/000000006590.png,bus,occlusion,low,mask,partial viewing,null,0.1
+164,Training\Training Stimulus\partialViewinglowmatched_cat341.png,mask_img/000000006662.png,cat,occlusion,low,mask,partial viewing,null,0.1
+165,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,mask_img/000000006744.png,firehydrant,occlusion,low,mask,partial viewing,null,0.1
+166,Training\Training Stimulus\partialViewinglowmatched_person3250.png,mask_img/000000006842.png,person,occlusion,low,mask,partial viewing,null,0.1
+167,Training\Training Stimulus\partialViewinglowmatched_tree30.png,mask_img/000000006870.png,tree,occlusion,low,mask,partial viewing,null,0.1
+168,Training\Training Stimulus\blobhighmatched_banana2093.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,blob,null,0.1
+169,Training\Training Stimulus\blobhighmatched_bird2861.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,blob,null,0.1
+170,Training\Training Stimulus\blobhighmatched_building13.png,./mask_img/grey_square.png,building,occlusion,high,no mask,blob,null,0.1
+171,Training\Training Stimulus\blobhighmatched_bus480.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,blob,null,0.1
+172,Training\Training Stimulus\blobhighmatched_cat172.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,blob,null,0.1
+173,Training\Training Stimulus\blobhighmatched_firehydrant125.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,blob,null,0.1
+174,Training\Training Stimulus\blobhighmatched_person2850.png,./mask_img/grey_square.png,person,occlusion,high,no mask,blob,null,0.1
+175,Training\Training Stimulus\blobhighmatched_tree88.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,blob,null,0.1
+176,Training\Training Stimulus\bloblowmatched_banana3652.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,blob,null,0.1
+177,Training\Training Stimulus\bloblowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,blob,null,0.1
+178,Training\Training Stimulus\bloblowmatched_building64.png,./mask_img/grey_square.png,building,occlusion,low,no mask,blob,null,0.1
+179,Training\Training Stimulus\bloblowmatched_bus938.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,blob,null,0.1
+180,Training\Training Stimulus\bloblowmatched_cat1021.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,blob,null,0.1
+181,Training\Training Stimulus\bloblowmatched_firehydrant570.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,blob,null,0.1
+182,Training\Training Stimulus\bloblowmatched_person411.png,./mask_img/grey_square.png,person,occlusion,low,no mask,blob,null,0.1
+183,Training\Training Stimulus\bloblowmatched_tree50.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,blob,null,0.1
+184,Training\Training Stimulus\control_banana3666.png,./mask_img/grey_square.png,banana,control,control,no mask,null,null,0.1
+185,Training\Training Stimulus\control_bird259.png,./mask_img/grey_square.png,bird,control,control,no mask,null,null,0.1
+186,Training\Training Stimulus\control_building95.png,./mask_img/grey_square.png,building,control,control,no mask,null,null,0.1
+187,Training\Training Stimulus\control_bus180.png,./mask_img/grey_square.png,bus,control,control,no mask,null,null,0.1
+188,Training\Training Stimulus\control_cat147.png,./mask_img/grey_square.png,cat,control,control,no mask,null,null,0.1
+189,Training\Training Stimulus\control_firehydrant46.png,./mask_img/grey_square.png,firehydrant,control,control,no mask,null,null,0.1
+190,Training\Training Stimulus\control_person1905.png,./mask_img/grey_square.png,person,control,control,no mask,null,null,0.1
+191,Training\Training Stimulus\control_tree2.png,./mask_img/grey_square.png,tree,control,control,no mask,null,null,0.1
+192,Training\Training Stimulus\deletionhighmatched_banana1970.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,deletion,null,0.1
+193,Training\Training Stimulus\deletionhighmatched_bird1657.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,deletion,null,0.1
+194,Training\Training Stimulus\deletionhighmatched_building66.png,./mask_img/grey_square.png,building,occlusion,high,no mask,deletion,null,0.1
+195,Training\Training Stimulus\deletionhighmatched_bus696.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,deletion,null,0.1
+196,Training\Training Stimulus\deletionhighmatched_cat313.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,deletion,null,0.1
+197,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,deletion,null,0.1
+198,Training\Training Stimulus\deletionhighmatched_person71.png,./mask_img/grey_square.png,person,occlusion,high,no mask,deletion,null,0.1
+199,Training\Training Stimulus\deletionhighmatched_tree71.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,deletion,null,0.1
+200,Training\Training Stimulus\deletionlowmatched_banana4227.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,deletion,null,0.1
+201,Training\Training Stimulus\deletionlowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,deletion,null,0.1
+202,Training\Training Stimulus\deletionlowmatched_building91.png,./mask_img/grey_square.png,building,occlusion,low,no mask,deletion,null,0.1
+203,Training\Training Stimulus\deletionlowmatched_bus1255.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,deletion,null,0.1
+204,Training\Training Stimulus\deletionlowmatched_cat356.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,deletion,null,0.1
+205,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,deletion,null,0.1
+206,Training\Training Stimulus\deletionlowmatched_person1622.png,./mask_img/grey_square.png,person,occlusion,low,no mask,deletion,null,0.1
+207,Training\Training Stimulus\deletionlowmatched_tree37.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,deletion,null,0.1
+208,Training\Training Stimulus\partialViewinghighmatched_banana726.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,partial viewing,null,0.1
+209,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,partial viewing,null,0.1
+210,Training\Training Stimulus\partialViewinghighmatched_building21.png,./mask_img/grey_square.png,building,occlusion,high,no mask,partial viewing,null,0.1
+211,Training\Training Stimulus\partialViewinghighmatched_bus765.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,partial viewing,null,0.1
+212,Training\Training Stimulus\partialViewinghighmatched_cat864.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,partial viewing,null,0.1
+213,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,partial viewing,null,0.1
+214,Training\Training Stimulus\partialViewinghighmatched_person157.png,./mask_img/grey_square.png,person,occlusion,high,no mask,partial viewing,null,0.1
+215,Training\Training Stimulus\partialViewinghighmatched_tree56.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,partial viewing,null,0.1
+216,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,partial viewing,null,0.1
+217,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,partial viewing,null,0.1
+218,Training\Training Stimulus\partialViewinglowmatched_building11.png,./mask_img/grey_square.png,building,occlusion,low,no mask,partial viewing,null,0.1
+219,Training\Training Stimulus\partialViewinglowmatched_bus127.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,partial viewing,null,0.1
+220,Training\Training Stimulus\partialViewinglowmatched_cat341.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,partial viewing,null,0.1
+221,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,partial viewing,null,0.1
+222,Training\Training Stimulus\partialViewinglowmatched_person3250.png,./mask_img/grey_square.png,person,occlusion,low,no mask,partial viewing,null,0.1
+223,Training\Training Stimulus\partialViewinglowmatched_tree30.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,partial viewing,null,0.1
+224,Training\Training Stimulus\blobhighmatched_banana2093.png,mask_img/000000000009.png,banana,occlusion,high,mask,blob,null,0.2
+225,Training\Training Stimulus\blobhighmatched_bird2861.png,mask_img/000000000294.png,bird,occlusion,high,mask,blob,null,0.2
+226,Training\Training Stimulus\blobhighmatched_building13.png,mask_img/000000000510.png,building,occlusion,high,mask,blob,null,0.2
+227,Training\Training Stimulus\blobhighmatched_bus480.png,mask_img/000000000562.png,bus,occlusion,high,mask,blob,null,0.2
+228,Training\Training Stimulus\blobhighmatched_cat172.png,mask_img/000000000671.png,cat,occlusion,high,mask,blob,null,0.2
+229,Training\Training Stimulus\blobhighmatched_firehydrant125.png,mask_img/000000000675.png,firehydrant,occlusion,high,mask,blob,null,0.2
+230,Training\Training Stimulus\blobhighmatched_person2850.png,mask_img/000000000711.png,person,occlusion,high,mask,blob,null,0.2
+231,Training\Training Stimulus\blobhighmatched_tree88.png,mask_img/000000001025.png,tree,occlusion,high,mask,blob,null,0.2
+232,Training\Training Stimulus\bloblowmatched_banana3652.png,mask_img/000000001216.png,banana,occlusion,low,mask,blob,null,0.2
+233,Training\Training Stimulus\bloblowmatched_bird289.png,mask_img/000000001282.png,bird,occlusion,low,mask,blob,null,0.2
+234,Training\Training Stimulus\bloblowmatched_building64.png,mask_img/000000001563.png,building,occlusion,low,mask,blob,null,0.2
+235,Training\Training Stimulus\bloblowmatched_bus938.png,mask_img/000000001573.png,bus,occlusion,low,mask,blob,null,0.2
+236,Training\Training Stimulus\bloblowmatched_cat1021.png,mask_img/000000001599.png,cat,occlusion,low,mask,blob,null,0.2
+237,Training\Training Stimulus\bloblowmatched_firehydrant570.png,mask_img/000000001810.png,firehydrant,occlusion,low,mask,blob,null,0.2
+238,Training\Training Stimulus\bloblowmatched_person411.png,mask_img/000000001852.png,person,occlusion,low,mask,blob,null,0.2
+239,Training\Training Stimulus\bloblowmatched_tree50.png,mask_img/000000001912.png,tree,occlusion,low,mask,blob,null,0.2
+240,Training\Training Stimulus\control_banana3666.png,mask_img/000000001966.png,banana,control,control,mask,null,null,0.2
+241,Training\Training Stimulus\control_bird259.png,mask_img/000000002068.png,bird,control,control,mask,null,null,0.2
+242,Training\Training Stimulus\control_building95.png,mask_img/000000002239.png,building,control,control,mask,null,null,0.2
+243,Training\Training Stimulus\control_bus180.png,mask_img/000000002562.png,bus,control,control,mask,null,null,0.2
+244,Training\Training Stimulus\control_cat147.png,mask_img/000000002591.png,cat,control,control,mask,null,null,0.2
+245,Training\Training Stimulus\control_firehydrant46.png,mask_img/000000002902.png,firehydrant,control,control,mask,null,null,0.2
+246,Training\Training Stimulus\control_person1905.png,mask_img/000000003000.png,person,control,control,mask,null,null,0.2
+247,Training\Training Stimulus\control_tree2.png,mask_img/000000003160.png,tree,control,control,mask,null,null,0.2
+248,Training\Training Stimulus\deletionhighmatched_banana1970.png,mask_img/000000003236.png,banana,occlusion,high,mask,deletion,null,0.2
+249,Training\Training Stimulus\deletionhighmatched_bird1657.png,mask_img/000000003320.png,bird,occlusion,high,mask,deletion,null,0.2
+250,Training\Training Stimulus\deletionhighmatched_building66.png,mask_img/000000003729.png,building,occlusion,high,mask,deletion,null,0.2
+251,Training\Training Stimulus\deletionhighmatched_bus696.png,mask_img/000000003779.png,bus,occlusion,high,mask,deletion,null,0.2
+252,Training\Training Stimulus\deletionhighmatched_cat313.png,mask_img/000000003804.png,cat,occlusion,high,mask,deletion,null,0.2
+253,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,mask_img/000000003865.png,firehydrant,occlusion,high,mask,deletion,null,0.2
+254,Training\Training Stimulus\deletionhighmatched_person71.png,mask_img/000000004444.png,person,occlusion,high,mask,deletion,null,0.2
+255,Training\Training Stimulus\deletionhighmatched_tree71.png,mask_img/000000004497.png,tree,occlusion,high,mask,deletion,null,0.2
+256,Training\Training Stimulus\deletionlowmatched_banana4227.png,mask_img/000000004706.png,banana,occlusion,low,mask,deletion,null,0.2
+257,Training\Training Stimulus\deletionlowmatched_bird289.png,mask_img/000000004785.png,bird,occlusion,low,mask,deletion,null,0.2
+258,Training\Training Stimulus\deletionlowmatched_building91.png,mask_img/000000004827.png,building,occlusion,low,mask,deletion,null,0.2
+259,Training\Training Stimulus\deletionlowmatched_bus1255.png,mask_img/000000004920.png,bus,occlusion,low,mask,deletion,null,0.2
+260,Training\Training Stimulus\deletionlowmatched_cat356.png,mask_img/000000004970.png,cat,occlusion,low,mask,deletion,null,0.2
+261,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,mask_img/000000005021.png,firehydrant,occlusion,low,mask,deletion,null,0.2
+262,Training\Training Stimulus\deletionlowmatched_person1622.png,mask_img/000000005123.png,person,occlusion,low,mask,deletion,null,0.2
+263,Training\Training Stimulus\deletionlowmatched_tree37.png,mask_img/000000005245.png,tree,occlusion,low,mask,deletion,null,0.2
+264,Training\Training Stimulus\partialViewinghighmatched_banana726.png,mask_img/000000005313.png,banana,occlusion,high,mask,partial viewing,null,0.2
+265,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,mask_img/000000005385.png,bird,occlusion,high,mask,partial viewing,null,0.2
+266,Training\Training Stimulus\partialViewinghighmatched_building21.png,mask_img/000000005443.png,building,occlusion,high,mask,partial viewing,null,0.2
+267,Training\Training Stimulus\partialViewinghighmatched_bus765.png,mask_img/000000005619.png,bus,occlusion,high,mask,partial viewing,null,0.2
+268,Training\Training Stimulus\partialViewinghighmatched_cat864.png,mask_img/000000006042.png,cat,occlusion,high,mask,partial viewing,null,0.2
+269,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,mask_img/000000006091.png,firehydrant,occlusion,high,mask,partial viewing,null,0.2
+270,Training\Training Stimulus\partialViewinghighmatched_person157.png,mask_img/000000006190.png,person,occlusion,high,mask,partial viewing,null,0.2
+271,Training\Training Stimulus\partialViewinghighmatched_tree56.png,mask_img/000000006334.png,tree,occlusion,high,mask,partial viewing,null,0.2
+272,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,mask_img/000000006393.png,banana,occlusion,low,mask,partial viewing,null,0.2
+273,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,mask_img/000000006489.png,bird,occlusion,low,mask,partial viewing,null,0.2
+274,Training\Training Stimulus\partialViewinglowmatched_building11.png,mask_img/000000006491.png,building,occlusion,low,mask,partial viewing,null,0.2
+275,Training\Training Stimulus\partialViewinglowmatched_bus127.png,mask_img/000000006590.png,bus,occlusion,low,mask,partial viewing,null,0.2
+276,Training\Training Stimulus\partialViewinglowmatched_cat341.png,mask_img/000000006662.png,cat,occlusion,low,mask,partial viewing,null,0.2
+277,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,mask_img/000000006744.png,firehydrant,occlusion,low,mask,partial viewing,null,0.2
+278,Training\Training Stimulus\partialViewinglowmatched_person3250.png,mask_img/000000006842.png,person,occlusion,low,mask,partial viewing,null,0.2
+279,Training\Training Stimulus\partialViewinglowmatched_tree30.png,mask_img/000000006870.png,tree,occlusion,low,mask,partial viewing,null,0.2
+280,Training\Training Stimulus\blobhighmatched_banana2093.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,blob,null,0.2
+281,Training\Training Stimulus\blobhighmatched_bird2861.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,blob,null,0.2
+282,Training\Training Stimulus\blobhighmatched_building13.png,./mask_img/grey_square.png,building,occlusion,high,no mask,blob,null,0.2
+283,Training\Training Stimulus\blobhighmatched_bus480.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,blob,null,0.2
+284,Training\Training Stimulus\blobhighmatched_cat172.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,blob,null,0.2
+285,Training\Training Stimulus\blobhighmatched_firehydrant125.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,blob,null,0.2
+286,Training\Training Stimulus\blobhighmatched_person2850.png,./mask_img/grey_square.png,person,occlusion,high,no mask,blob,null,0.2
+287,Training\Training Stimulus\blobhighmatched_tree88.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,blob,null,0.2
+288,Training\Training Stimulus\bloblowmatched_banana3652.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,blob,null,0.2
+289,Training\Training Stimulus\bloblowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,blob,null,0.2
+290,Training\Training Stimulus\bloblowmatched_building64.png,./mask_img/grey_square.png,building,occlusion,low,no mask,blob,null,0.2
+291,Training\Training Stimulus\bloblowmatched_bus938.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,blob,null,0.2
+292,Training\Training Stimulus\bloblowmatched_cat1021.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,blob,null,0.2
+293,Training\Training Stimulus\bloblowmatched_firehydrant570.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,blob,null,0.2
+294,Training\Training Stimulus\bloblowmatched_person411.png,./mask_img/grey_square.png,person,occlusion,low,no mask,blob,null,0.2
+295,Training\Training Stimulus\bloblowmatched_tree50.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,blob,null,0.2
+296,Training\Training Stimulus\control_banana3666.png,./mask_img/grey_square.png,banana,control,control,no mask,null,null,0.2
+297,Training\Training Stimulus\control_bird259.png,./mask_img/grey_square.png,bird,control,control,no mask,null,null,0.2
+298,Training\Training Stimulus\control_building95.png,./mask_img/grey_square.png,building,control,control,no mask,null,null,0.2
+299,Training\Training Stimulus\control_bus180.png,./mask_img/grey_square.png,bus,control,control,no mask,null,null,0.2
+300,Training\Training Stimulus\control_cat147.png,./mask_img/grey_square.png,cat,control,control,no mask,null,null,0.2
+301,Training\Training Stimulus\control_firehydrant46.png,./mask_img/grey_square.png,firehydrant,control,control,no mask,null,null,0.2
+302,Training\Training Stimulus\control_person1905.png,./mask_img/grey_square.png,person,control,control,no mask,null,null,0.2
+303,Training\Training Stimulus\control_tree2.png,./mask_img/grey_square.png,tree,control,control,no mask,null,null,0.2
+304,Training\Training Stimulus\deletionhighmatched_banana1970.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,deletion,null,0.2
+305,Training\Training Stimulus\deletionhighmatched_bird1657.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,deletion,null,0.2
+306,Training\Training Stimulus\deletionhighmatched_building66.png,./mask_img/grey_square.png,building,occlusion,high,no mask,deletion,null,0.2
+307,Training\Training Stimulus\deletionhighmatched_bus696.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,deletion,null,0.2
+308,Training\Training Stimulus\deletionhighmatched_cat313.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,deletion,null,0.2
+309,Training\Training Stimulus\deletionhighmatched_firehydrant226.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,deletion,null,0.2
+310,Training\Training Stimulus\deletionhighmatched_person71.png,./mask_img/grey_square.png,person,occlusion,high,no mask,deletion,null,0.2
+311,Training\Training Stimulus\deletionhighmatched_tree71.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,deletion,null,0.2
+312,Training\Training Stimulus\deletionlowmatched_banana4227.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,deletion,null,0.2
+313,Training\Training Stimulus\deletionlowmatched_bird289.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,deletion,null,0.2
+314,Training\Training Stimulus\deletionlowmatched_building91.png,./mask_img/grey_square.png,building,occlusion,low,no mask,deletion,null,0.2
+315,Training\Training Stimulus\deletionlowmatched_bus1255.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,deletion,null,0.2
+316,Training\Training Stimulus\deletionlowmatched_cat356.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,deletion,null,0.2
+317,Training\Training Stimulus\deletionlowmatched_firehydrant552.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,deletion,null,0.2
+318,Training\Training Stimulus\deletionlowmatched_person1622.png,./mask_img/grey_square.png,person,occlusion,low,no mask,deletion,null,0.2
+319,Training\Training Stimulus\deletionlowmatched_tree37.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,deletion,null,0.2
+320,Training\Training Stimulus\partialViewinghighmatched_banana726.png,./mask_img/grey_square.png,banana,occlusion,high,no mask,partial viewing,null,0.2
+321,Training\Training Stimulus\partialViewinghighmatched_bird2883.png,./mask_img/grey_square.png,bird,occlusion,high,no mask,partial viewing,null,0.2
+322,Training\Training Stimulus\partialViewinghighmatched_building21.png,./mask_img/grey_square.png,building,occlusion,high,no mask,partial viewing,null,0.2
+323,Training\Training Stimulus\partialViewinghighmatched_bus765.png,./mask_img/grey_square.png,bus,occlusion,high,no mask,partial viewing,null,0.2
+324,Training\Training Stimulus\partialViewinghighmatched_cat864.png,./mask_img/grey_square.png,cat,occlusion,high,no mask,partial viewing,null,0.2
+325,Training\Training Stimulus\partialViewinghighmatched_firehydrant72.png,./mask_img/grey_square.png,firehydrant,occlusion,high,no mask,partial viewing,null,0.2
+326,Training\Training Stimulus\partialViewinghighmatched_person157.png,./mask_img/grey_square.png,person,occlusion,high,no mask,partial viewing,null,0.2
+327,Training\Training Stimulus\partialViewinghighmatched_tree56.png,./mask_img/grey_square.png,tree,occlusion,high,no mask,partial viewing,null,0.2
+328,Training\Training Stimulus\partialViewinglowmatched_banana3584.png,./mask_img/grey_square.png,banana,occlusion,low,no mask,partial viewing,null,0.2
+329,Training\Training Stimulus\partialViewinglowmatched_bird2598.png,./mask_img/grey_square.png,bird,occlusion,low,no mask,partial viewing,null,0.2
+330,Training\Training Stimulus\partialViewinglowmatched_building11.png,./mask_img/grey_square.png,building,occlusion,low,no mask,partial viewing,null,0.2
+331,Training\Training Stimulus\partialViewinglowmatched_bus127.png,./mask_img/grey_square.png,bus,occlusion,low,no mask,partial viewing,null,0.2
+332,Training\Training Stimulus\partialViewinglowmatched_cat341.png,./mask_img/grey_square.png,cat,occlusion,low,no mask,partial viewing,null,0.2
+333,Training\Training Stimulus\partialViewinglowmatched_firehydrant149.png,./mask_img/grey_square.png,firehydrant,occlusion,low,no mask,partial viewing,null,0.2
+334,Training\Training Stimulus\partialViewinglowmatched_person3250.png,./mask_img/grey_square.png,person,occlusion,low,no mask,partial viewing,null,0.2
+335,Training\Training Stimulus\partialViewinglowmatched_tree30.png,./mask_img/grey_square.png,tree,occlusion,low,no mask,partial viewing,null,0.2
