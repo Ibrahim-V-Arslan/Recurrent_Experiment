@@ -4,7 +4,7 @@ Created on Fri Nov 18 16:41:47 2022
 @author: Ibrahim
 """
 from psychopy import visual, core, event, gui
-import os, sys
+import os, sys, webbrowser
 import pandas as pd
 import numpy as np
 from experiment_prerequisite import response_set, win, training_df, trials_df, ans_arr, key_df, instruction_set
@@ -21,10 +21,14 @@ WIDTH  = 1080
 #win = visual.Window(size = (HEIGHT,WIDTH), units = ('pix'), fullscr = True, color = (100,100,100), colorSpace='rgb255')
 # changing this to true to debug more easily
 win.mouseVisible = True
+overall_time = core.Clock()
 
 #GUI screen to collect participant number  
 myDlg = gui.Dlg(title="Object Recognition Task")
 myDlg.addField('Participant Number')
+myDlg.addField('Age:')
+myDlg.addField('Gender:',choices=["Male", "Female", "Other"])
+myDlg.addField('Preferred Hand', choices = ["Right", "Left"])
 pt_num = myDlg.show()  # show dialog and wait for OK or Cancel
 if myDlg.OK:  # if ok_data is not None
     if pt_num[0].isdigit():
@@ -55,6 +59,9 @@ fixation = visual.TextStim(win, text = "+", height=(52), color ="black")
 # list the variables we are interested in
 variables = [
     'pt_num', # participant number
+    'Age', # Age of the participant
+    'Gender', # Gender
+    'Handedness', #Preferred Hand
     'trial_nbr', # trial number
     'block_number', # Block Number
     'rt', # reaction time
@@ -71,7 +78,8 @@ variables = [
     'mask_filename', # exact mask file name
     'task', # training, main task
     'pressed_key', #key pressed
-    'correct_key' # key for the corresponding answer
+    'correct_key',# key for the corresponding answer
+    'Experiment Duration'
 ]
 # create an empty dict for output
 out_dict = {}
@@ -79,6 +87,7 @@ for variable in variables:
     out_dict[variable] = []
 
 # training instructions
+win.mouseVisible = False
 instruction_set()
 if event.waitKeys(keyList=['space']): #if pt presses space --> start exp
     fixation.draw()
@@ -91,6 +100,10 @@ while training == True:
     
     for z in range(len(training_df)):
         out_dict['pt_num'].append((int(pt_num[0])))
+        out_dict['Age'].append(pt_num[1])
+        out_dict['Gender'].append(pt_num[2])
+        out_dict['Handedness'].append(pt_num[3])
+        
         out_dict['block_number'].append("Training")
         if event.getKeys(keyList=["escape"]):
                 win.close()
@@ -98,9 +111,11 @@ while training == True:
         # fixation cross
         fixation.draw(win)
         win.flip()
+        core.wait(0.5)
+        win.flip()
         # jitter
         core.wait(np.random.uniform(0.0, 0.5))
-        win.flip() # do i need this?
+        win.flip()
         
         # append the relevant data
         # append trial number
@@ -115,10 +130,9 @@ while training == True:
         stimm_f.draw(win) #show stimulus
         win.flip()
         rt = core.Clock() # instantiate stopwatch
-        core.wait(0.05)
+        core.wait(0.03)
         win.flip()
         soa_rand = training_df.iloc[[z]]['soa'].item()
-        
         
         # SOA
         core.wait(soa_rand)
@@ -128,9 +142,9 @@ while training == True:
         stimm_m = visual.ImageStim(win, image = stim_m)
         stimm_m.draw(win)
         win.flip()
-        core.wait(0.3)
+        core.wait(0.5)
         win.flip()
-        core.wait(((0.2) - soa_rand))
+        core.wait(((0.1) - soa_rand))
         # drawing the response array
         response_set()
         win.flip()
@@ -152,7 +166,7 @@ while training == True:
         # predicted category, pressed key and which category corresponded, find it 
         # append accuracy AND display feedback
         if (answer == (key_df.loc[key_df['category'] == training_df.iloc[[z]]['category'].item(), 'corr_key']).item()):
-            out_dict['acc'].append("correct")
+            out_dict['acc'].append("true")
             training_correct += 1
             correct_answer.draw(win) #draw the feedback 
             win.flip()
@@ -165,65 +179,90 @@ while training == True:
             win.flip()
             core.wait(0.5) #wait for 0.5s # do we need this?
             win.flip()
+        out_dict['Experiment Duration'].append(overall_time.getTime())
         if training_correct == 8:
             training = False
             instr_trn_to_exp.draw()
             block_RT = round((sum(out_dict['rt']) / len(out_dict['rt'])),2)
-            block_acc = round((out_dict['acc'].count('correct') / len(out_dict['acc'])),2)
+            block_acc = round((out_dict['acc'].count('true') / len(out_dict['acc'])),2)
             b_rt = visual.TextStim(win, text = str(block_RT), pos = (0, -250), color= (0,0,0), colorSpace='rgb255')
             b_acc = visual.TextStim(win, text = str(block_acc), pos = (0, -100), color= (0,0,0), colorSpace='rgb255')
             b_rt.setSize(42)
             b_acc.setSize(42)
             b_rt.draw()
             b_acc.draw()
-
             win.flip()
             event.waitKeys(keyList=["escape", 'space'])
             break
 # Experiment/Training trials
 for i in range(len(trials_df)):
     out_dict['pt_num'].append((int(pt_num[0])))
+    out_dict['Age'].append(pt_num[1])
+    out_dict['Gender'].append(pt_num[2])
+    out_dict['Handedness'].append(pt_num[3])
     if event.getKeys(keyList=["escape"]):
             win.close()
             core.quit()
-    if i + 1 <= 272:
+    if (i+1) / len(trials_df) <= 0.1:    # change with len()
         out_dict['block_number'].append("Block 1")
-    elif i + 1 > 272 and i+1 <= 544:
+    elif (i+1) / len(trials_df) <= 0.2:
         out_dict['block_number'].append("Block 2")
-    elif i + 1 > 544 and i+1 <= 816:
+    elif (i+1) / len(trials_df) <= 0.3:
         out_dict['block_number'].append("Block 3")
-    elif i + 1 > 816 and i+1 <= 1088:
+    elif (i+1) / len(trials_df) <= 0.4:
         out_dict['block_number'].append("Block 4")
-    elif i + 1 > 1088 and i+1 <= 1360:
+    elif (i+1) / len(trials_df) <= 0.5:
         out_dict['block_number'].append("Block 5")
-    elif i + 1 > 1360 and i+1 <= 1632:
+    elif (i+1) / len(trials_df) <= 0.6:
         out_dict['block_number'].append("Block 6")
-    elif i + 1 > 1632 and i+1 <= 1904:
+    elif (i+1) / len(trials_df) <= 0.7:
         out_dict['block_number'].append("Block 7")
-    elif i + 1 > 1904 and i+1 <= 2176:
+    elif (i+1) / len(trials_df) <= 0.8:
         out_dict['block_number'].append("Block 8")
-    elif i + 1 > 2176 and i+1 <= 2448:
+    elif (i+1) / len(trials_df) <= 0.9:
         out_dict['block_number'].append("Block 9")
-    elif i + 1 > 2448 and i+1 <= 2720:
+    elif (i+1) / len(trials_df) <= 1:
         out_dict['block_number'].append("Block 10")
-        
-    if i + 1 == 8:
+    
+    if (i+1) / len(trials_df) <= 0.1:    # change with len()
+        b_num = visual.TextStim(win, text = "1", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.2:
+        b_num = visual.TextStim(win, text = "2", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.3:
+        b_num = visual.TextStim(win, text = "3", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.4:
+        b_num = visual.TextStim(win, text = "4", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.5:
+        b_num = visual.TextStim(win, text = "5", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.6:
+        b_num = visual.TextStim(win, text = "6", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.7:
+        b_num = visual.TextStim(win, text = "7", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.8:
+        bb_num = visual.TextStim(win, text = "8", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    elif (i+1) / len(trials_df) == 0.9:
+       b_num = visual.TextStim(win, text = "9", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+    
+    if (i + 1 == 144) or (i + 1 == 288) or (i + 1 == 432) or (i + 1 == 576) or (i + 1 == 720) or (i + 1 == 864) or (i + 1 == 1008) or (i + 1 == 1152) or (i + 1 == 1296):
         instr_mid.draw()
         block_RT = round((sum(out_dict['rt']) / len(out_dict['rt'])),2)
-        block_acc = round((out_dict['acc'].count('correct') / len(out_dict['acc'])),2)
+        block_acc = round((out_dict['acc'].count('true') / len(out_dict['acc'])),2)
         b_rt = visual.TextStim(win, text = str(block_RT), pos = (0, -250), color= (0,0,0), colorSpace='rgb255')
         b_acc = visual.TextStim(win, text = str(block_acc), pos = (0, -90), color= (0,0,0), colorSpace='rgb255')
         b_rt.setSize(42)
         b_acc.setSize(42)
+        b_num.setSize(42)
+        b_num.draw()
         b_rt.draw()
         b_acc.draw()
-
         win.flip()
         event.waitKeys(keyList=["escape", 'space'])
         
     
     # fixation cross
     fixation.draw(win)
+    win.flip()
+    core.wait(0.5)
     win.flip()
     # jitter
     core.wait(np.random.uniform(0.0, 0.5))
@@ -244,7 +283,7 @@ for i in range(len(trials_df)):
     stimm_f.draw(win) #show stimulus
     win.flip()
     rt = core.Clock() # instantiate stopwatch
-    core.wait(0.05)
+    core.wait(0.03)
     win.flip()
     soa_rand = trials_df.iloc[[i]]['soa'].item()
     
@@ -257,10 +296,10 @@ for i in range(len(trials_df)):
     stimm_m = visual.ImageStim(win, image = stim_m)
     stimm_m.draw(win)
     win.flip()
-    core.wait(0.3)
+    core.wait(0.5)
     win.flip()
     
-    core.wait(((0.2) - soa_rand))
+    core.wait(((0.1) - soa_rand))
     # drawing the response array
     response_set()
     win.flip()
@@ -282,27 +321,19 @@ for i in range(len(trials_df)):
     # predicted category, pressed key and which category corresponded, find it 
     # append accuracy AND display feedback
     if (answer == (key_df.loc[key_df['category'] == trials_df.iloc[[i]]['category'].item(), 'corr_key']).item()):
-        out_dict['acc'].append("correct")
-        #correct_answer.draw(win) #draw the feedback 
-        #win.flip()
-        core.wait(0.2)
-        #win.flip()
+        out_dict['acc'].append("true")
+        core.wait(0.1)
     else:
         out_dict['acc'].append("false")
-        #incorrect_answer.draw(win) #draw the feedback 
-        #win.flip()
-        core.wait(0.2) #wait for 0.5s # do we need this?
-        #win.flip()
-    if i == 10:
-        out_df = pd.DataFrame.from_dict(out_dict)
-        out_df.to_csv('./data/results_'+ str(pt_num[0]) + '.csv',index=False) 
-        win.close()
-        core.quit()
-
+        core.wait(0.1) #wait for 0.5s # do we need this?
+    out_dict['Experiment Duration'].append(overall_time.getTime())
 #FULL END
-#event.waitKeys(keyList=(['space'])) #if space is pressed, close window
+instr_end.draw(win)
+win.flip()
+event.waitKeys(keyList=(['space'])) #if space is pressed, close window
 win.close()
-
+webbrowser.open_new('https://forms.gle/hFnvuZosyiyLiAXo8')
 #DATA OUTPUT
 out_df = pd.DataFrame.from_dict(out_dict)
 out_df.to_csv('./data/results_'+ str(pt_num[0]) + '.csv',index=False) #convert file to CSV
+core.quit()

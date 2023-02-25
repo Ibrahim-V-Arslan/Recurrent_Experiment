@@ -65,14 +65,14 @@ for i in range(0,8):
         loc_list.append("C:\\Users\\veoni\\Desktop\\THESIS\\Task\\category models\\model_tree.png")
         
         
-o_1 = visual.ImageStim(win, image = loc_list[0], size = 160, pos=(-780, -300))
-o_2 = visual.ImageStim(win, image = loc_list[1], size = 160, pos= (-560, -300))
-o_3 = visual.ImageStim(win, image = loc_list[2], size = 160, pos= (-340, -300))
-o_4 = visual.ImageStim(win, image = loc_list[3], size = 160, pos= (-120, -300))
-o_5 = visual.ImageStim(win, image = loc_list[4], size = 160, pos= (100, -300))
-o_6 = visual.ImageStim(win, image = loc_list[5], size = 160, pos= (320, -300))
-o_7 = visual.ImageStim(win, image = loc_list[6], size = 160, pos= (540, -300))
-o_8 = visual.ImageStim(win, image = loc_list[7], size = 160, pos= (760, -300))
+o_1 = visual.ImageStim(win, image = loc_list[0], size = 130, pos=(-780, -300))
+o_2 = visual.ImageStim(win, image = loc_list[1], size = 130, pos= (-560, -300))
+o_3 = visual.ImageStim(win, image = loc_list[2], size = 130, pos= (-340, -300))
+o_4 = visual.ImageStim(win, image = loc_list[3], size = 130, pos= (-120, -300))
+o_5 = visual.ImageStim(win, image = loc_list[4], size = 130, pos= (100, -300))
+o_6 = visual.ImageStim(win, image = loc_list[5], size = 130, pos= (320, -300))
+o_7 = visual.ImageStim(win, image = loc_list[6], size = 130, pos= (540, -300))
+o_8 = visual.ImageStim(win, image = loc_list[7], size = 130, pos= (760, -300))
 
 
 #random.shuffle(loc_list)
@@ -81,28 +81,28 @@ o_8 = visual.ImageStim(win, image = loc_list[7], size = 160, pos= (760, -300))
 
 
 s_q = visual.TextStim(win, text = "Q", pos = (-780, -450), color= (0,0,0), colorSpace='rgb255')
-s_q.setSize(42)
+s_q.setSize(38)
 
 s_w = visual.TextStim(win, text = "W", pos = (-560, -450), color= (0,0,0), colorSpace='rgb255')
-s_w.setSize(42)
+s_w.setSize(38)
 
 s_e = visual.TextStim(win, text = "E", pos = (-340, -450), color= (0,0,0), colorSpace='rgb255')
-s_e.setSize(42)
+s_e.setSize(38)
 
 s_r = visual.TextStim(win, text = "R", pos = (-120, -450), color= (0,0,0), colorSpace='rgb255')
-s_r.setSize(42)
+s_r.setSize(38)
 
 s_u = visual.TextStim(win, text = "U", pos = (100, -450), color= (0,0,0), colorSpace='rgb255')
-s_u.setSize(42)
+s_u.setSize(38)
 
 s_i = visual.TextStim(win, text = "I", pos = (320, -450), color= (0,0,0), colorSpace='rgb255')
-s_i.setSize(42)
+s_i.setSize(38)
 
 s_o = visual.TextStim(win, text = "O", pos = (540, -450), color= (0,0,0), colorSpace='rgb255')
-s_o.setSize(42)
+s_o.setSize(38)
 
 s_p = visual.TextStim(win, text = "P", pos = (760, -450), color= (0,0,0), colorSpace='rgb255')
-s_p.setSize(42)
+s_p.setSize(38)
 
 
 def response_set():  
@@ -149,14 +149,14 @@ def instruction_set():
     s_p = visual.TextStim(win, text = "P", pos = (760, -70), color= (0,0,0), colorSpace='rgb255')
     s_p.setSize(42)
     
-    o_1 = visual.ImageStim(win, image = loc_list[0], size = 160, pos=(-780, 80))
-    o_2 = visual.ImageStim(win, image = loc_list[1], size = 160, pos= (-560, 80))
-    o_3 = visual.ImageStim(win, image = loc_list[2], size = 160, pos= (-340, 80))
-    o_4 = visual.ImageStim(win, image = loc_list[3], size = 160, pos= (-120, 80))
-    o_5 = visual.ImageStim(win, image = loc_list[4], size = 160, pos= (100, 80))
-    o_6 = visual.ImageStim(win, image = loc_list[5], size = 160, pos= (320, 80))
-    o_7 = visual.ImageStim(win, image = loc_list[6], size = 160, pos= (540, 80))
-    o_8 = visual.ImageStim(win, image = loc_list[7], size = 160, pos= (760, 80))
+    o_1 = visual.ImageStim(win, image = loc_list[0], size = 130, pos=(-780, 80))
+    o_2 = visual.ImageStim(win, image = loc_list[1], size = 130, pos= (-560, 80))
+    o_3 = visual.ImageStim(win, image = loc_list[2], size = 130, pos= (-340, 80))
+    o_4 = visual.ImageStim(win, image = loc_list[3], size = 130, pos= (-120, 80))
+    o_5 = visual.ImageStim(win, image = loc_list[4], size = 130, pos= (100, 80))
+    o_6 = visual.ImageStim(win, image = loc_list[5], size = 130, pos= (320, 80))
+    o_7 = visual.ImageStim(win, image = loc_list[6], size = 130, pos= (540, 80))
+    o_8 = visual.ImageStim(win, image = loc_list[7], size = 130, pos= (760, 80))
     instr_beg = visual.ImageStim(win, image= "./instructions/beg.png")
     instr_beg.draw(win)
     

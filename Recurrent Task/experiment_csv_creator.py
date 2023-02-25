@@ -36,9 +36,9 @@ variables = [
 for variable in variables:
     task_dict[variable] = []
 
-for soa in [0.05, 0.1, 0.2]:
+for soa in [0.025, 0.050, 0.1]:
     # we loop through the images once for mask, once without
-    for m in ['mask', 'no mask']:
+    for m in ['mask']:
         for i in range(len(stim_dir)):
             # read the image and mask files
             stim_file = pathlib.Path(stim_dir[i])
