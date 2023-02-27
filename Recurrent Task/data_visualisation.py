@@ -6,11 +6,11 @@ import pandas as pd
 import glob
 
 # use a personal style sheet
-plt.style.use("./Recurrent Task/styles/mystyle.mplstyle")
+plt.style.use("./styles/mystyle.mplstyle")
 
 # listing all the current data
 # data_files = glob.glob(r'./Recurrent Task/data/*')
-data_files = glob.glob(r'./Recurrent Task/data/*_?.csv') # taking only the two complete files
+data_files = glob.glob(r'./data/*_?.csv') # taking only the two complete files
 
 # concatenating all individual ppts in a large df
 df = pd.DataFrame()
