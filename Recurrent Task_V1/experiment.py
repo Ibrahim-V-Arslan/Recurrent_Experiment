@@ -2,6 +2,7 @@
 Created on Fri Nov 18 16:41:47 2022
 
 @author: Ibrahim
+!deprecated!
 """
 from psychopy import visual, core, event, gui
 import os, sys, webbrowser
