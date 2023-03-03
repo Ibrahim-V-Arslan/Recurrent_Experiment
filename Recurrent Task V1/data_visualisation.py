@@ -40,7 +40,7 @@ for so in set(df['size_occl']):
             x = 'difficulty',
             order = ['control', 'low', 'high'],
             hue = 'soa',
-            palette = 'Blues',
+            palette = 'Greens',
             join = True
         )
         if dv == 'acc':
