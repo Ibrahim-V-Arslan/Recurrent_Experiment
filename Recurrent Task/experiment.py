@@ -239,9 +239,9 @@ for i in range(len(trials_df)):
     elif (i+1) / len(trials_df) == 0.7:
         b_num = visual.TextStim(win, text = "7", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
     elif (i+1) / len(trials_df) == 0.8:
-        bb_num = visual.TextStim(win, text = "8", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+        b_num = visual.TextStim(win, text = "8", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
     elif (i+1) / len(trials_df) == 0.9:
-       b_num = visual.TextStim(win, text = "9", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
+        b_num = visual.TextStim(win, text = "9", pos = (100, 205), color= (0,0,0), colorSpace='rgb255', bold=(True))
     
     if (i + 1 == 144) or (i + 1 == 288) or (i + 1 == 432) or (i + 1 == 576) or (i + 1 == 720) or (i + 1 == 864) or (i + 1 == 1008) or (i + 1 == 1152) or (i + 1 == 1296):
         instr_mid.draw()

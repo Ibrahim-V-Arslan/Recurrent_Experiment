@@ -1,12 +1,17 @@
 import numpy as np
-import matplotlib
 from matplotlib import pyplot as plt
 import seaborn as sns
 import pandas as pd
+import os
 import glob
 
 # use a personal style sheet
 plt.style.use("./styles/mystyle.mplstyle")
+
+# output directory for plots
+out_dir = r'./plots/'
+if (not os.path.exists(out_dir)): 
+    os.mkdir(out_dir)
 
 # listing all the current data
 # data_files = glob.glob(r'./Recurrent Task/data/*')
@@ -52,5 +57,7 @@ for so in set(df['size_occl']):
             plt.ylabel("RT")
             plt.suptitle("Masking effect on RT (n={})".format(n))
         plt.title('For {} apertures'.format(so))
+        plt.ylim(0.3, 1)
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
-        plt.show()
+        plt.savefig(out_dir + '{}_{}.png'.format(so, dv))
+        # plt.show()
