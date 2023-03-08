@@ -135,6 +135,7 @@ while training == True:
         win.flip()
         
         # drawing the mask
+        soa_wait = ((0.125) - soa_rand)
         stim_m = training_df.iloc[[z]]['mask_filename'].item()
         stimm_m = visual.ImageStim(win, image = stim_m)
         stimm_m.draw(win)
@@ -143,8 +144,10 @@ while training == True:
         if answer is not None:
             out_dict['rt'].append(rt.getTime())
         win.flip()
-        soa_wait = ((0.125) - soa_rand)
-        answer = (event.waitKeys(maxWait=soa_wait, keyList=(ans_arr + ['escape'])))
+        if answer is None:
+            answer = (event.waitKeys(maxWait=soa_wait, keyList=(ans_arr + ['escape'])))
+            if answer is not None:
+                out_dict['rt'].append(rt.getTime())
         # drawing the response array
         if answer is None:
             response_set()
@@ -290,6 +293,7 @@ for i in range(len(trials_df)):
     
     
     # drawing the mask
+    soa_wait = ((0.125) - soa_rand)
     stim_m = trials_df.iloc[[i]]['mask_filename'].item()
     stimm_m = visual.ImageStim(win, image = stim_m)
     stimm_m.draw(win)
@@ -298,8 +302,10 @@ for i in range(len(trials_df)):
     if answer is not None:
         out_dict['rt'].append(rt.getTime())
     win.flip()
-    soa_wait = ((0.125) - soa_rand)
-    answer = (event.waitKeys(maxWait=soa_wait, keyList=(ans_arr + ['escape'])))
+    if answer is None:
+        answer = (event.waitKeys(maxWait=soa_wait, keyList=(ans_arr + ['escape'])))
+        if answer is not None:
+            out_dict['rt'].append(rt.getTime())
     # drawing the response array
     if answer is None:
         response_set()
