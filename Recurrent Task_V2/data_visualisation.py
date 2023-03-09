@@ -28,6 +28,7 @@ for i in range(len(data_files)):
 
 # select only the main task
 df = df.loc[df['task']=='experiment']
+df['exp_id'] = 'V2'
 
 # extracting sample size
 n = len(set(df.pt_num))
