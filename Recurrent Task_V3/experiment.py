@@ -206,6 +206,7 @@ for i in range(len(trials_df)):
     out_dict['Age'].append(pt_num[1])
     out_dict['Gender'].append(pt_num[2])
     out_dict['Handedness'].append(pt_num[3])
+    out_dict['Version'].append("V3")
     if event.getKeys(keyList=["escape"]):
             win.close()
             core.quit()
