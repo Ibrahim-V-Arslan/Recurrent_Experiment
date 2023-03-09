@@ -4,6 +4,7 @@ import seaborn as sns
 import pandas as pd
 import os
 import glob
+import pathlib
 
 # use a personal style sheet
 plt.style.use("./styles/mystyle.mplstyle")
@@ -16,6 +17,8 @@ if (not os.path.exists(out_dir)):
 # listing all the current data
 # data_files = glob.glob(r'./Recurrent Task/data/*')
 data_files = glob.glob(r'./data/*_?.csv') # taking only the two complete files
+# extract exp name
+exp_name = str(pathlib.Path(data_files[0]).parents[1])
 
 # concatenating all individual ppts in a large df
 df = pd.DataFrame()
@@ -51,11 +54,11 @@ for so in set(df['size_occl']):
         if dv == 'acc':
             # plt.ylim(0.6, 1)
             plt.ylabel("Accuracy")
-            plt.suptitle("Masking effect on accuracy (n={})".format(n))
+            plt.suptitle("Masking effect on accuracy (n={}), {}".format(n, exp_name))
         elif dv == 'rt':
             # plt.ylim(900, 1200)
             plt.ylabel("RT")
-            plt.suptitle("Masking effect on RT (n={})".format(n))
+            plt.suptitle("Masking effect on RT (n={}), {}".format(n, exp_name))
         plt.title('For {} apertures'.format(so))
         plt.ylim(0.3, 1)
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
