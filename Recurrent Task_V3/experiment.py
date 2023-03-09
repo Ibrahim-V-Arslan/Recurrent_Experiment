@@ -58,6 +58,7 @@ fixation = visual.TextStim(win, text = "+", height=(52), color ="black")
 
 # list the variables we are interested in
 variables = [
+    'Version', #Version of the Experiment
     'pt_num', # participant number
     'Age', # Age of the participant
     'Gender', # Gender
@@ -103,6 +104,7 @@ while training == True:
         out_dict['Age'].append(pt_num[1])
         out_dict['Gender'].append(pt_num[2])
         out_dict['Handedness'].append(pt_num[3])
+        out_dict['Version'].append("V3")
         
         out_dict['block_number'].append("Training")
         if event.getKeys(keyList=["escape"]):
