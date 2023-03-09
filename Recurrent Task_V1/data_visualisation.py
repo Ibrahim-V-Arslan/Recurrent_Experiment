@@ -16,7 +16,7 @@ if (not os.path.exists(out_dir)):
 
 # listing all the current data
 # data_files = glob.glob(r'./Recurrent Task/data/*')
-data_files = glob.glob(r'./data/*_?.csv') # taking only the two complete files
+data_files = glob.glob(r'./Recurrent Task_V1/data/*_?.csv') # taking only the two complete files
 # extract exp name
 exp_name = str(pathlib.Path(data_files[0]).parents[1])
 
@@ -36,7 +36,7 @@ n = len(set(df.pt_num))
 # for each occluder size separately
 for so in set(df['size_occl']):
     # for each measure of performance separately
-    for dv in ['acc', 'rt']:
+    for dv in ['acc']:
         if dv == 'rt':
             data = df.loc[df['acc']] # only take correct trials for RT
         elif dv == 'acc':
@@ -62,5 +62,5 @@ for so in set(df['size_occl']):
         plt.title('For {} apertures'.format(so))
         plt.ylim(0.3, 1)
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
-        plt.savefig(out_dir + '{}_{}.png'.format(so, dv))
-        # plt.show()
+        plt.savefig(out_dir + '{}_{}_{}.png'.format(exp_name, so, dv))
+        plt.show()

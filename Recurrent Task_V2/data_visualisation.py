@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib
+import os
 from matplotlib import pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -7,7 +7,12 @@ import pathlib
 import glob
 
 # use a personal style sheet
-plt.style.use("./styles/mystyle.mplstyle")
+plt.style.use("./Recurrent Task_V2/styles/mystyle.mplstyle")
+
+# output directory for plots
+out_dir = r'./plots/'
+if (not os.path.exists(out_dir)): 
+    os.mkdir(out_dir)
 
 # listing all the current data
 # data_files = glob.glob(r'./Recurrent Task/data/*')
@@ -31,7 +36,7 @@ n = len(set(df.pt_num))
 # for each occluder size separately
 for so in set(df['size_occl']):
     # for each measure of performance separately
-    for dv in ['acc', 'rt']:
+    for dv in ['acc']:
         if dv == 'rt':
             data = df.loc[df['acc']] # only take correct trials for RT
         elif dv == 'acc':
@@ -47,7 +52,7 @@ for so in set(df['size_occl']):
             join = True
         )
         if dv == 'acc':
-            # plt.ylim(0.6, 1)
+            plt.ylim(0.6, 1)
             plt.ylabel("Accuracy")
             plt.suptitle("Masking effect on accuracy (n={}), {}".format(n, exp_name))
         elif dv == 'rt':
@@ -56,4 +61,5 @@ for so in set(df['size_occl']):
             plt.suptitle("Masking effect on RT (n={}), {}".format(n, exp_name))
         plt.title('For {} apertures'.format(so))
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+        plt.savefig(out_dir + '{}_{}_{}.png'.format(exp_name, so, dv))
         plt.show()
