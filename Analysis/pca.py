@@ -7,24 +7,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Style
-plt.style.use("./style_sheet/mystyle.mplstyle")
+# plt.style.use("./style_sheet/mystyle.mplstyle")
 
 # Load the data
 df = pd.read_csv(r'./data.csv')
+df = pd.read_csv(r'./Analysis/fulldataset.csv')
+
+
+df['image'] = [ df['filename'].values[i].split('_')[-1].split('.')[-2] for i in range(len(df)) ]
+
+
 
 # extract category labels with set order
 labels = ['person', 'cat', 'bird', 'tree', 'banana', 'firehydrant', 'bus', 'building']
 
 # create a palette for the categories
-colours = {
-    'person': '#003f5c',
-    'cat': '#2f4b7c',
-    'bird': '#665191',
-    'tree': '#a05195',
-    'banana': '#d45087',
-    'firehydrant': '#f95d6a',
-    'bus': '#ff7c43',
-    'building': '#ffa600'
+category_colours = {
+    'person': '#E78F46',
+    'cat': '#AF83CB',
+    'bird': '#6080BD',
+    'tree': '#609550',
+    'banana': '#E2CD61',
+    'firehydrant': '#E74A5F',
+    'bus': '#7ECEC9',
+    'building': '#6F747F'
 }
 
 # extract image labels with set order
@@ -32,7 +38,7 @@ im_labels = np.unique(df['image'])
 
 # Build the normal confusion matrix
 y_true = df['category']
-y_pred = df['prediction']
+y_pred = df['choiced_category']
 cm = confusion_matrix(y_true, y_pred, labels=labels)
 # Standardise it
 cm = ( cm - np.mean(cm) ) / np.std(cm)
@@ -40,10 +46,14 @@ cm = ( cm - np.mean(cm) ) / np.std(cm)
 # Build the image-wise confusion matrix
 im_cm = pd.DataFrame(index=[im for im in im_labels])
 for l in labels:
-    im_cm[l] = [len(df.loc[(df['image']==im) & (df['prediction']==l)]) for im in im_labels]
+    im_cm[l] = [len(df.loc[(df['image']==im) & (df['choiced_category']==l)]) for im in im_labels]
 # Standardise it
 im_cm = (im_cm.sub(np.mean(im_cm.values))).div(np.std(im_cm.values))
 
+# example how to fit and then transform
+PCA(n_components=2).fit_transform(cm)
+model = PCA(n_components=2).fit(cm)
+transformed_data = model.transform(cm)
 
 ### Build the dimensionality reduction matrices
 # category-wise
@@ -89,7 +99,7 @@ scatterplot = sns.scatterplot(
     data = std_im_cm,
     ax = axes[1],
     hue = 'Category',
-    palette = colours
+    palette = category_colours
 )
 scatterplot.set(xticklabels=[], yticklabels=[])
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
@@ -97,7 +107,7 @@ for c in labels:
     axes[1].annotate(
         c,
         (std_cm.loc[std_cm['Category']==c, 'Dimension 1'], std_cm.loc[std_cm['Category']==c, 'Dimension 2']), 
-        color = colours[c]
+        color = category_colours[c]
     )
 axes[1].set_title('per image')
 
