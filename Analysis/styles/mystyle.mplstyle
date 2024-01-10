@@ -7,8 +7,10 @@
 # xtick.direction: out
 # ytick.direction: out
 # axes.axisbelow: True
-font.sans-serif:"Helvetica Neue"
-font.family: georgia
+# font.sans-serif:"Helvetica Neue"
+font.family: serif
+# font.family: serif
+font.serif: Times New Roman, Times, Palatino, New Century Schoolbook, Bookman, Computer Modern Roman, Times New Roman
 font.size: 12.0
 axes.titleweight: normal # font weight of title
 figure.titleweight: bold # font weight of suptitle
@@ -27,6 +29,10 @@ axes.grid: True
 grid.linestyle: dashed
 grid.color:   93939C71    ## grid color
 grid.alpha:   0.6       ## transparency, between 0.0 and 1.0
+
+# LEGEND
+legend.frameon: False # remove the frame around the legend
+legend.borderaxespad: 0.0 # pad between the axes and legend border
 
 # Seaborn darkgrid parameters
 # axes.grid: True
