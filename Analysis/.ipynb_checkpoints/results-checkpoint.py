@@ -29,15 +29,13 @@ from sklearn.metrics import confusion_matrix
 import pingouin as pg
 import scikit_posthocs as sp
 import cv2 as cv
-import warnings
-warnings.filterwarnings("ignore")
 
 
 # import style sheet
-plt.style.use(r"../Analysis/styles/mystyle.mplstyle")
+plt.style.use("./Analysis/styles/mystyle.mplstyle")
 
 # list the data files
-data_files = glob.glob(r'../Experiment/data/results*.csv')
+data_files = glob.glob(r'./Experiment/data/results*.csv')
 
 # read the data files into a single dataframe
 df = pd.concat([pd.read_csv(file) for file in data_files])
@@ -320,11 +318,11 @@ plt.show()
 
 
 # list the input images
-occluded_images = glob.glob(r'../Experiment/Stimulus/all_stim/occlusion/partialviewing/*/*/*.png')
-object_images = glob.glob(r'../Experiment/Stimulus/objects/*.png')
+occluded_images = glob.glob(r'./Experiment/Stimulus/all_stim/occlusion/partialviewing/*/*/*.png')
+object_images = glob.glob(r'./Experiment/Stimulus/objects/*.png')
 
 # extract the directory of the object images
-object_dir = r'../Experiment/Stimulus/objects/'
+object_dir = r'./Experiment/Stimulus/objects/'
 
 # match each occluded image with its object
 matched_images = pd.DataFrame({
